@@ -1,18 +1,31 @@
-package org.sistem.entity;
-
-import java.util.List;
+package org.sistem.model;
 
 public class Customer {
 
+    private Long id;
+    private Long corporateId;
     private String name;
     private String cpf;
     private String age;
     private String phone;
     private String email;
-    private List<Account> account;
-    private List<Score> scores;
     private Long total;
-    private List<Product> recurringProducts;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getCorporateId() {
+        return corporateId;
+    }
+
+    public void setCorporateId(Long corporateId) {
+        this.corporateId = corporateId;
+    }
 
     public String getName() {
         return name;
@@ -54,14 +67,6 @@ public class Customer {
         this.email = email;
     }
 
-    public List<Account> getAccount() {
-        return account;
-    }
-
-    public void setAccount(List<Account> account) {
-        this.account = account;
-    }
-
     public Long getTotal() {
         return total;
     }
@@ -70,19 +75,4 @@ public class Customer {
         this.total = total;
     }
 
-    public List<Product> getRecurringProducts() {
-        return recurringProducts;
-    }
-
-    public void setRecurringProducts(List<Product> recurringProducts) {
-        this.recurringProducts = recurringProducts;
-    }
-
-    public List<Score> getScores() {
-        return scores;
-    }
-
-    public void setScores(List<Score> scores) {
-        this.scores = scores;
-    }
 }

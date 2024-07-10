@@ -1,18 +1,24 @@
-package org.sistem.entity;
+package org.sistem.model;
 
-import org.sistem.Enums.Type;
-
-import java.util.List;
+import org.sistem.enums.TypeScore;
 
 public class Corporate {
 
+    private Long id;
     private String name;
     private String code;
     private String cnpj;
-    private Type type;
-    private List<Score> score;
+    private TypeScore type;
     private String email;
     private String password;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -46,11 +52,11 @@ public class Corporate {
         this.password = password;
     }
 
-    public Type getType() {
+    public TypeScore getType() {
         return type;
     }
 
-    public void setType(Type type) {
+    public void setType(TypeScore type) {
         this.type = type;
     }
 
@@ -62,11 +68,4 @@ public class Corporate {
         this.code = code;
     }
 
-    public List<Score> getUser() {
-        return score;
-    }
-
-    public void setUser(List<Score> score) {
-        this.score = score;
-    }
 }

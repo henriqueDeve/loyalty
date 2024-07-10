@@ -9,14 +9,14 @@ repositories {
 }
 
 dependencies {
+    implementation 'io.quarkus:quarkus-flyway'
     implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
     implementation "io.quarkus:quarkus-resteasy-reactive-jackson:${quarkusPlatformVersion}"
+    implementation "io.quarkus:quarkus-reactive-pg-client:${quarkusPlatformVersion}8i1"
     implementation "io.quarkus:quarkus-smallrye-health:${quarkusPlatformVersion}"
     implementation "io.quarkus:quarkus-config-yaml:${quarkusPlatformVersion}"
     implementation "io.quarkus:quarkus-rest-client-reactive-jackson:${quarkusPlatformVersion}"
     implementation "io.quarkus:quarkus-vertx:${quarkusPlatformVersion}"
-    implementation "io.quarkus:quarkus-mongodb-client:${quarkusPlatformVersion}"
-    implementation "io.quarkus:quarkus-mongodb-panache:${quarkusPlatformVersion}"
     implementation "io.quarkus:quarkus-arc:${quarkusPlatformVersion}"
     implementation "io.quarkus:quarkus-resteasy-reactive:${quarkusPlatformVersion}"
     implementation "io.quarkus:quarkus-cache:${quarkusPlatformVersion}"
@@ -24,6 +24,7 @@ dependencies {
     implementation "io.quarkus:quarkus-elytron-security-properties-file:${quarkusPlatformVersion}"
     implementation "io.quarkus:quarkus-oidc-client-reactive-filter:${quarkusPlatformVersion}"
     implementation 'io.quarkus:quarkus-rest'
+    implementation 'io.quarkus:quarkus-resteasy-mutiny'
     implementation 'io.quarkus:quarkus-rest-jackson'
     implementation 'io.quarkus:quarkus-smallrye-jwt'
     implementation 'io.quarkus:quarkus-arc'

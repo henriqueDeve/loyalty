@@ -6,8 +6,8 @@ import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import org.bson.types.ObjectId;
-import org.sistem.Service.CorporateService;
-import org.sistem.entity.Corporate;
+import org.sistem.service.CorporateService;
+import org.sistem.model.Corporate;
 
 @Path("/corporate")
 @Produces(MediaType.APPLICATION_JSON)
@@ -23,8 +23,8 @@ public class CorporateController {
     }
 
     @GET
-    @Path("/{_id}")
-    public Uni<Void> findCorporateById(@PathParam("_id") ObjectId _id) {
-        return corporateService.findCorporateById(_id);
+    @Path("/{id}")
+    public Uni<Void> findCorporateById(@PathParam("id") Long id) {
+        return corporateService.findCorporateById(id);
     }
 }

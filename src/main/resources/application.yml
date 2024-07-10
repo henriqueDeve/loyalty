@@ -1,0 +1,24 @@
+quarkus:
+  flyway:
+    migrate-at-start: true
+
+"%dev":
+  datasource:
+    db-kind: postgresql
+    username: seuusuario_dev
+    password: suasenha_dev
+    reactive:
+      url: jdbc:postgresql://localhost:5432/seubanco_dev
+      schema: public
+      initialization-mode: always
+      init-script-paths: db/migration
+
+
+"%prod":
+  datasource:
+    db-kind: postgresql
+    username: seuusuario_prod
+    password: suasenha_prod
+    reactive:
+      url: jdbc:postgresql://localhost:5432/seubanco_prod
+

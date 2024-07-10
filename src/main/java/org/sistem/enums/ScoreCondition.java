@@ -1,4 +1,4 @@
-package org.sistem.Enums;
+package org.sistem.enums;
 
 public enum ScoreCondition {
 

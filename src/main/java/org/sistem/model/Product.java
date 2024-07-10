@@ -1,16 +1,43 @@
-package org.sistem.entity;
+package org.sistem.model;
 
 import java.math.BigDecimal;
 import java.util.Date;
 
 public class Product {
 
+    private Long id;
+    private Long corporateId;
+    private Long customerId;
     private String name;
     private String code;
     private Date createdDate;
     private Date lastUppdate;
     private int count;
     private BigDecimal value;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getCorporateId() {
+        return corporateId;
+    }
+
+    public void setCorporateId(Long corporateId) {
+        this.corporateId = corporateId;
+    }
+
+    public Long getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(Long customerId) {
+        this.customerId = customerId;
+    }
 
     public String getName() {
         return name;
