@@ -3,12 +3,12 @@ quarkus:
     migrate-at-start: true
 
 "%dev":
-  datasource:
+  "datasource":
     db-kind: postgresql
-    username: seuusuario_dev
-    password: suasenha_dev
+    username: admin
+    password: admin
     reactive:
-      url: jdbc:postgresql://localhost:5432/seubanco_dev
+      url: jdbc:postgresql://localhost:5432/devdb
       schema: public
       initialization-mode: always
       init-script-paths: db/migration
