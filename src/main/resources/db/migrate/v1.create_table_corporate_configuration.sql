@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS CorporateConfiguration (
+CREATE TABLE IF NOT EXISTS corporate_configuration (
     id SERIAL PRIMARY KEY,
     corporateId BIGINT NOT NULL,
     monthlyExpirationDate INTEGER,

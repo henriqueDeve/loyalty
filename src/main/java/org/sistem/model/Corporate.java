@@ -8,7 +8,6 @@ public class Corporate {
     private String name;
     private String code;
     private String cnpj;
-    private TypeScore type;
     private String email;
     private String password;
 
@@ -50,14 +49,6 @@ public class Corporate {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public TypeScore getType() {
-        return type;
-    }
-
-    public void setType(TypeScore type) {
-        this.type = type;
     }
 
     public String getCode() {

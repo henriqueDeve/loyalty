@@ -8,9 +8,9 @@ import org.sistem.model.Corporate;
 @ApplicationScoped
 public class CorporateService {
 
-    public Uni<Response> createCorporate(Corporate corporate) {
-    }
-
-    public Uni<Void> findCorporateById() {
-    }
+//    public Uni<Response> createCorporate(Corporate corporate) {
+//    }
+//
+//    public Uni<Void> findCorporateById() {
+//    }
 }
